@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+                      <html lang='en'>
+                      <head>
+                        <meta charset='UTF-8'>
+                        <meta http-equiv='X-Frame-Options' content='DENY'>
+                        <meta http-equiv='Content-Security-Policy' content="default-src'self'; script-src 'nonce-abc123'; style-src'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none';">
+                        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                        <meta name='description' content='Explore modern and classic artists from around the world with ArtVerse.'>
+                        <meta name='keywords' content='art, gallery, artists, paintings, exhibitions'>
+                        <meta name='author' content='ArtVerse Team'>
+                        <title>ArtVerse - Discover Artworks</title>
+                        <style>
+                          body {
+                            margin: 0;
+                            font-family: 'Verdana', sans-serif;
+                            background-color: White;
+                            color: #222;
+                            transition: background 0.3s, color 0.3s;
+                          }
+                          header {
+                            background-color: DarkSlateGray;
+                            color: white;
+                            text-align: center;
+                            padding: 20px;
+                            position: relative;
+                          }
+                          nav {
+                            background-color: #2F4F4F;
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            padding: 10px;
+                          }
+                          nav a {
+                            color: white;
+                            text-decoration: none;
+                            margin: 10px 15px;
+                            font-weight: bold;
+                          }
+                          nav a:hover {
+                            color: Gold;
+                          }
+                         .section {
+                            padding: 40px 20px;
+                          }
+                         .section-light {
+                            background: LightGray;
+                          }
+                         .grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                            gap: 20px;
+                          }
+                         .card {
+                            background: white;
+                            padding: 15px;
+                            border-radius: 8px;
+                            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          }
+                         .card img {
+                            width: 100%;
+                            border-radius: 5px;
+                            margin-bottom: 10px;
+                          }
+                         .card h3,
+                         .card p {
+                            margin: 10px 0;
+                            font-size: 1rem;
+                            word-wrap: break-word;
+                          }
+                         .newsletter {
+                            background: #e0e0e0;
+                            padding: 40px 20px;
+                            text-align: center;
+                            margin-top: 50px;
+                            border-top: 2px solid #ccc;
+                          }
+                         .newsletter input {
+                            padding: 10px;
+                            margin: 5px;
+                            width: 250px;
+                            max-width: 90%;
+                          }
+                         .newsletter button {
+                            padding: 10px 20px;
+                            margin: 5px;
+                            background-color: Gold;
+                            color: black;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                          }
+                          footer {
+                            text-align: center;
+                            padding: 20px;
+                            background: #2F4F4F;
+                            color: white;
+                          }
+                          /* Mobile Responsive Styles */
+                          @media (max-width: 768px) {
+                            nav {
+                              flex-direction: column;
+                              align-items: center;
+                            }
+                           .newsletter input {
+                              width: 90%;
+                            }
+                           .grid {
+                              grid-template-columns: 1fr;
+                            }
+                           .card {
+                              padding: 10px;
+                            }
+                           .card img {
+                              margin-bottom: 8px;
+                            }
+                           .card h3,
+                           .card p {
+                              font-size: 0.95rem;
+                              line-height: 1.3;
+                              word-break: break-word;
+                            }
+                          }
+                        </style>
+                        <script type='application/ld+json'>
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "ArtGallery",
+                          "name": "ArtVerse",
+                          "url": "https://artverse.com",
+                          "logo": "https://artverse.com/logo.png",
+                          "sameAs": ["https://twitter.com/artverse", "https://facebook.com/artverse"],
+                          "description": "ArtVerse offers modern and classic artists for players in a modern and classic platform."
+                        }
+                        </script>
+                        <script nonce="abc123">
+                          window.onload = function () {
+                            setTimeout(() => {
+                              alert("🌸 Welcome to Our Website – Explore the latest updates!");
+                            }, 2000);
+                          }
+                        </script>
+                      </head>
+                      <body>
+                        <header>
+                          <h1>ArtVerse</h1>
+                        </header>
+                        <nav>
+                          <a href="#home">Home</a>
+                          <a href="#gallery">Gallery</a>
+                          <a href="#artists">Artists</a>
+                          <a href="#exhibitions">Exhibitions</a>
+                          <a href="#contact">Contact</a>
+                        </nav>
+                        <section class='section section-light' id='gallery'>
+                          <h2>Our Art Gallery</h2>
+                          <div class='grid'>
+                            <div class='card'>
+                              <img src='painting.jpg' alt='Abstract painting on a grid' loading='lazy'>
+                              <h3>Abstract Painting</h3>
+                              <p>Vibrant displays include paintings, animals, and modern paintings.</p>
+                            </div>
+                            <div class='card'>
+                              <img src='classical.jpg' alt='Classical portrait' loading='lazy'>
+                              <h3>Classical Art</h3>
+                              <p>Modern displays covering worlds and artists.</p>
+                            </div>
+                          </div>
+                        </section>
+                        <section class='newsletter' id='contact'>
+                          <h2>Join Our Art Gallery Newsletter</h2>
+                          <input type='email' placeholder='Your Email' required maxlength="255" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                          <button>Subscribe</button>
+                        </section>
+                        <footer>
+                          <p>&copy; 2025 ArtVerse. All rights reserved.</p>
+                        </footer>
+                      </body>
+                      </html>
